@@ -93,6 +93,7 @@ div#intro {
 .slogan {
   position:relative;
   top:200px;
+  left:70px;
 }
 
 .slogan h3 {
@@ -111,13 +112,6 @@ div#intro {
 
 div#macrocategorie {
   padding: 10px;
-  text-align: center;
-  margin-bottom:50px;
-}
-
-div#macrocategorie button {
-  width:100%;
-  margin-bottom:50px;
 }
 
 div#approfondimenti {
@@ -137,7 +131,7 @@ footer a {
 
 span.fa-stack {
   color:#C50218;
-  font-size:1em;
+  font-size:2em;
 }
 
 .fa {
@@ -154,4 +148,15 @@ div#approfondimenti h2 {
 
 div#approfondimenti h1 {
     font-size:5em;
+}
+
+.btn-default {
+  border-color: #c50218;
+}
+
+#macrocategorie a {
+  width:100%;
+  margin-bottom:40px;
+  color:#c50218!important;
+  text-align: left;    
 }
