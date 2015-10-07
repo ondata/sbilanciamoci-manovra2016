@@ -69,6 +69,7 @@ a {
 
 
 /* smanettamenti NELSON */
+
 .navbar-default {
   background-color: #C50218;
   border-color: #C50218;
@@ -128,9 +129,30 @@ div#approfondimenti {
 }
 
 footer a {
-    color:#C50218;
+    color:#C50218 !important;
 }
 
 .jumbotron {
     background:none;
+}
+
+span.fa-stack {
+  color:#C50218;
+  font-size:1em;
+}
+
+.fa {
+  color:#C50218;
+}
+
+button {
+  text-align:left !important;
+}
+
+div#approfondimenti h2 {
+    font-size:2em;
+}
+
+div#approfondimenti h1 {
+    font-size:4em;
 }
