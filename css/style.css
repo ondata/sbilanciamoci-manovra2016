@@ -60,6 +60,10 @@ a {
     color: white !important;
 }
 
+.table a {
+    color: black !important;
+}
+
 /* rimosso momentaneamente export tool */
 .exhibit-toolboxWidget-button {
     visibility: hidden !important;
