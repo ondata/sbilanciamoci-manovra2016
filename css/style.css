@@ -36,7 +36,7 @@ ul.share-buttons{
   padding: 0;
 }
 
-ul.share-buttons li{
+ul.share-buttons li {
   display: inline;
 }
 
@@ -44,9 +44,11 @@ ul.share-buttons li{
   padding: 0px 15px !important;
 }
 
-ul.nav li a, ul.nav li a:visited {
+/*
+ * ul.nav li a, ul.nav li a:visited {
     color: white !important;
 }
+
 
 ul.nav li a:hover, ul.nav li a:active {
     color: white !important;
@@ -55,6 +57,7 @@ ul.nav li a:hover, ul.nav li a:active {
 ul.nav li.active a {
     color: white !important;
 }
+*/
 
 a {
     color: white !important;
@@ -81,7 +84,7 @@ a {
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
   color: #555;
-  background-color: rgba(231, 231, 231, 0.50);
+  background-color: rgba(231, 231, 231, 0.23);
 }
 
 h1, h3 {
@@ -111,7 +114,9 @@ div#intro {
   text-transform: uppercase;
 }
 
-
+.slogan {
+ text-align:center;
+}
 
 div#macrocategorie {
   padding: 10px;
@@ -162,4 +167,33 @@ div#approfondimenti h1 {
   margin-bottom:40px;
   color:#c50218!important;
   text-align: left;    
+}
+
+.dropdown-menu {
+  background-color:#C50218;
+}
+
+.dropdown-toggle {
+  background-color:#c50218 !important;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+  background-color: rgba(231, 231, 231, 0.23) !important;
+}
+
+.caret {
+  border-top-color: white !important;
+  border-bottom-color: white !important;
+}
+
+div#scarica, div#scaricatab {
+  text-align:center;
+}
+
+#macrocategorie .btn.btn-default.btn-lg {
+  border-radius: 15px !important;
+}
+
+a.btn.btn-default.btn-lg {
+  font-size:2.2rem;
 }
