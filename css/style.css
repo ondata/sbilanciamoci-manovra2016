@@ -94,10 +94,9 @@ div#intro {
     min-height:500px;
 }
 
-.slogan {
+.slogan h1, .slogan h3 {
   position:relative;
   top:200px;
-  left:70px;
 }
 
 .slogan h3 {
