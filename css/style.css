@@ -192,6 +192,7 @@ div#scarica, div#scaricatab {
 
 #macrocategorie .btn.btn-default.btn-lg {
   border-radius: 15px !important;
+  white-space: normal;
 }
 
 a.btn.btn-default.btn-lg {
