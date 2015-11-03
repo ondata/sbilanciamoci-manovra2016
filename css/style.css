@@ -198,3 +198,9 @@ div#scarica, div#scaricatab {
 a.btn.btn-default.btn-lg {
   font-size:2.2rem;
 }
+
+/** Pagina di dettaglio - Welfare **/
+tr td {
+  line-height:2em !important;
+  font-size:1.2em
+}
