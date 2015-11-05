@@ -92,9 +92,11 @@ h1, h3 {
 }
 
 div#intro {
-    width:100%;
-    background: url(../images/bgsbil2.jpg) no-repeat top center;
-    min-height:500px;
+    background: url(../images/altanbg.jpg) center bottom;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    /* padding-top: 40px; */
+    min-height: 500px;
 }
 
 .slogan h1, .slogan h3 {
@@ -104,10 +106,10 @@ div#intro {
 
 .slogan h3 {
   font-size:30px;
-  color:white;
+  color:#C50218;
 }
 .slogan h1 {
-  color: #FFF;
+  color: #C50218;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
