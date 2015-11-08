@@ -95,8 +95,7 @@ div#intro {
     background: url(../images/altanbg.jpg) center bottom;
     background-size: 40%;
     background-repeat: no-repeat;
-    /* padding-top: 40px; */
-    min-height: 500px;
+    min-height: 550px;
 }
 
 .slogan h1, .slogan h3 {
@@ -179,7 +178,7 @@ div#approfondimenti h1 {
   background-color:#c50218 !important;
 }
 
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+ul.nav.navbar-nav.dropdown>li>a:hover, .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
   background-color: rgba(231, 231, 231, 0.23) !important;
 }
 
