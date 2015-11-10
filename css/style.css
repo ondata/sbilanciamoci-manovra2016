@@ -92,10 +92,10 @@ h1, h3 {
 }
 
 div#intro {
-    background: url(../images/altanbg.jpg) center bottom;
+    background: url(../images/altanbg.jpg) center right;
     background-size: 40%;
     background-repeat: no-repeat;
-    min-height: 550px;
+    min-height: 600px;
 }
 
 .slogan h1, .slogan h3 {
@@ -112,7 +112,7 @@ div#intro {
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 .slogan {
@@ -125,8 +125,8 @@ div#macrocategorie {
 
 div#approfondimenti {
   text-align:center;
-  background-color:#C50218;
-  color:white;
+  background-color:white;
+  color:#C50218;
   margin-bottom:50px;
 }
 
