@@ -341,3 +341,22 @@ a.ambiente.btn-default {
     border-color: #F3BC52 !important;
 }
 /*ambiente*/
+
+/*tutto*/
+a.tutto {
+  color: gray !important;
+  text-align: left;
+}
+
+a.tutto .fa {
+  color:gray;
+}
+
+a.tutto .fa-inverse {
+  color:white;
+}
+
+a.tutto.btn-default {
+    border-color: gray !important;
+}
+/*tutto*/
