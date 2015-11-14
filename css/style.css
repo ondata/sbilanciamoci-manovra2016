@@ -166,7 +166,7 @@ div#approfondimenti h1 {
 #macrocategorie a {
   width:100%;
   margin-bottom:40px;
-  color:#c50218!important;
+  color:#c50218;
   text-align: left;    
 }
 
@@ -205,3 +205,139 @@ tr td {
   line-height:2em !important;
   font-size:1.2em
 }
+
+/*finanza*/
+a.finanza {
+  color: #55A0C7 !important;
+  text-align: left;
+}
+
+a.finanza .fa {
+  color:#55A0C7;
+}
+
+a.finanza .fa-inverse {
+  color:white;
+}
+
+a.finanza.btn-default {
+    border-color: #55A0C7 !important;
+}
+/*finanza*/
+
+/*welfare*/
+a.welfare {
+  color: #D66D71 !important;
+  text-align: left;
+}
+
+a.welfare .fa {
+  color:#D66D71;
+}
+
+a.welfare .fa-inverse {
+  color:white;
+}
+
+a.welfare.btn-default {
+    border-color: #D66D71 !important;
+}
+/*welfare*/
+
+/*lavoro*/
+a.lavoro {
+  color: #50B6A8 !important;
+  text-align: left;
+}
+
+a.lavoro .fa {
+  color:#50B6A8;
+}
+
+a.lavoro .fa-inverse {
+  color:white;
+}
+
+a.lavoro.btn-default {
+    border-color: #50B6A8 !important;
+}
+/*lavoro*/
+
+/*cooperazione*/
+a.cooperazione {
+  color: #C273C7 !important;
+  text-align: left;
+}
+
+a.cooperazione .fa {
+  color:#C273C7;
+}
+
+a.cooperazione .fa-inverse {
+  color:white;
+}
+
+a.cooperazione.btn-default {
+    border-color: #C273C7 !important;
+}
+/*cooperazione*/
+
+
+/*cultura*/
+a.cultura {
+  color: #C4C960 !important;
+  text-align: left;
+}
+
+a.cultura .fa {
+  color:#C4C960;
+}
+
+a.cultura .fa-inverse {
+  color:white;
+}
+
+a.cultura.btn-default {
+    border-color: #C4C960 !important;
+}
+/*cultura*/
+
+
+
+/*altra*/
+a.altra {
+  color: #C50218 !important;
+  text-align: left;
+}
+
+a.altra .fa {
+  color:#C50218;
+}
+
+a.altra .fa-inverse {
+  color:white;
+}
+
+a.altra.btn-default {
+    border-color: #C50218 !important;
+}
+/*altra*/
+
+/*ambiente*/
+a.ambiente {
+  color: #F3BC52 !important;
+  text-align: left;
+}
+
+a.ambiente .fa {
+  color:#F3BC52;
+}
+
+a.ambiente .fa-inverse {
+  color:white;
+}
+
+a.ambiente.btn-default {
+    border-color: #F3BC52 !important;
+}
+/*ambiente*/
