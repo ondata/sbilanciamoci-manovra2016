@@ -247,6 +247,10 @@ a.welfare.btn-default {
 .table-striped-welfare > tbody > tr:nth-child(odd) > th {
   background-color: #D66D71;
 }
+
+span.welfare .text-primary{
+  color: #D66D71 !important;
+}
 /*welfare*/
 
 /*lavoro*/
