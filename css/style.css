@@ -242,6 +242,11 @@ a.welfare .fa-inverse {
 a.welfare.btn-default {
     border-color: #D66D71 !important;
 }
+
+.table-striped-welfare > tbody > tr:nth-child(odd) > td,
+.table-striped-welfare > tbody > tr:nth-child(odd) > th {
+  background-color: #D66D71;
+}
 /*welfare*/
 
 /*lavoro*/
@@ -360,3 +365,4 @@ a.tutto.btn-default {
     border-color: gray !important;
 }
 /*tutto*/
+
