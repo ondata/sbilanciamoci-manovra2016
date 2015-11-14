@@ -253,10 +253,15 @@ span.welfare .text-primary{
 }
 
 .tip-welfare {
-  /*border-radius: 15px !important;
+  border-radius: 5px !important;
   white-space: normal;
-  background-color: #D66D71;*/
+  background-color: #C50218;
   color: white;
+  margin: 0px;
+  padding: 10px;
+  border-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
 }
 /*welfare*/
 
