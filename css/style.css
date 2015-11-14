@@ -251,6 +251,13 @@ a.welfare.btn-default {
 span.welfare .text-primary{
   color: #D66D71 !important;
 }
+
+.tip-welfare {
+  border-radius: 15px !important;
+  white-space: normal;
+  background-color: #D66D71;
+  color: white;
+}
 /*welfare*/
 
 /*lavoro*/
