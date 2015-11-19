@@ -223,6 +223,15 @@ a.finanza .fa-inverse {
 a.finanza.btn-default {
     border-color: #55A0C7 !important;
 }
+
+.table-striped-finanza > tbody > tr:nth-child(odd) > td,
+.table-striped-finanza > tbody > tr:nth-child(odd) > th {
+  background-color: #55A0C7;
+}
+
+span.finanza .text-primary{
+  color: #55A0C7 !important;
+}
 /*finanza*/
 
 /*welfare*/
@@ -282,6 +291,15 @@ a.lavoro .fa-inverse {
 a.lavoro.btn-default {
     border-color: #50B6A8 !important;
 }
+
+.table-striped-lavoro > tbody > tr:nth-child(odd) > td,
+.table-striped-lavoro > tbody > tr:nth-child(odd) > th {
+  background-color: #50B6A8;
+}
+
+span.lavoro .text-primary{
+  color: #50B6A8 !important;
+}
 /*lavoro*/
 
 /*cooperazione*/
@@ -300,6 +318,15 @@ a.cooperazione .fa-inverse {
 
 a.cooperazione.btn-default {
     border-color: #C273C7 !important;
+}
+
+.table-striped-cooperazione > tbody > tr:nth-child(odd) > td,
+.table-striped-cooperazione > tbody > tr:nth-child(odd) > th {
+  background-color: #C273C7;
+}
+
+span.cooperazione .text-primary{
+  color: #C273C7 !important;
 }
 /*cooperazione*/
 
@@ -320,6 +347,15 @@ a.cultura .fa-inverse {
 
 a.cultura.btn-default {
     border-color: #C4C960 !important;
+}
+
+.table-striped-cultura > tbody > tr:nth-child(odd) > td,
+.table-striped-cultura > tbody > tr:nth-child(odd) > th {
+  background-color: #C4C960;
+}
+
+span.cultura .text-primary{
+  color: #C4C960 !important;
 }
 /*cultura*/
 
@@ -342,6 +378,15 @@ a.altra .fa-inverse {
 a.altra.btn-default {
     border-color: #C50218 !important;
 }
+
+.table-striped-altra > tbody > tr:nth-child(odd) > td,
+.table-striped-altra > tbody > tr:nth-child(odd) > th {
+  background-color: #C50218;
+}
+
+span.altra .text-primary{
+  color: #C50218 !important;
+}
 /*altra*/
 
 /*ambiente*/
@@ -360,6 +405,15 @@ a.ambiente .fa-inverse {
 
 a.ambiente.btn-default {
     border-color: #F3BC52 !important;
+}
+
+.table-striped-ambiente > tbody > tr:nth-child(odd) > td,
+.table-striped-ambiente > tbody > tr:nth-child(odd) > th {
+  background-color: #F3BC52;
+}
+
+span.ambiente .text-primary{
+  color: #F3BC52 !important;
 }
 /*ambiente*/
 
@@ -380,5 +434,27 @@ a.tutto .fa-inverse {
 a.tutto.btn-default {
     border-color: gray !important;
 }
+
+.table-striped-tutto > tbody > tr:nth-child(odd) > td,
+.table-striped-tutto > tbody > tr:nth-child(odd) > th {
+  background-color: #gray;
+}
+
+span.tutto .text-primary{
+  color: #gray !important;
+}
 /*tutto*/
 
+/* tooltip */
+.tip {
+  border-radius: 5px !important;
+  white-space: normal;
+  background-color: #C50218;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+  border-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+}
+/* tooltip */
