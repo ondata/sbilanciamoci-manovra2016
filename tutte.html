@@ -57,10 +57,25 @@
   <script src="./js/dist/exhibit-api.js?locale=it"></script>
   <script type="text/javascript">
   var tableStyler = function(table, database) {
-    $(table).addClass("table table-condensed table-striped-welfare");
+    $(table).addClass("table table-condensed");
   };
   </script>
-
+  <script type="text/javascript">
+  var rowStyler = function(item, database, tr) {
+    var categoria = database.getObject(item, "Categoria");
+    var color = "white";
+    switch (categoria) {
+      case "Altraeconomia": color = "#C50218"; break;
+      case "Fisco e Finanza": color = "#55A0C7"; break;
+      case "Lavoro e Reddito": color = "#50B6A8"; break;
+      case "Cultura e Conoscenza": color = "#C4C960"; break;
+      case "Ambiente e Sviluppo Sostenibile": color = "#F3BC52"; break;
+      case "Welfare e Diritti": color = "#D66D71"; break;
+      case "Pace, disarmo e cooperazione": color = "#C273C7"; break;
+    }
+    jQuery(tr).css("background-color", color);
+  };
+  </script>
 
 </head>
 
@@ -81,98 +96,90 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <div class="container">
           <ul class="nav navbar-nav dropdown">
-                    <li >
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Proposte
-                        <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./fisco_finanza.html">Fisco e finanza</a></li>
-                                <li><a href="./lavoro_reddito.html">Lavoro e reddito</a></li>
-                                <li><a href="./cultura_conoscenza.html">Cultura e conoscenza</a></li>
-                                <li><a href="./ambiente.html">Ambiente e Sviluppo sostenibile</a></li>
-                                <li class="active"><a href="./welfare.html">Welfare e diritti</a></li>
-                                <li><a href="./pace_disarmo_cooperazione.html">Cooperazione, pace, disarmo</a></li>
-                                <li><a href="./altra_economia.html">Altraeconomia</a></li> 
-                            </ul>
-                    <li>
-                        <a href="./infografiche.html">Infografiche</a>
-                    </li>
-                    </li>
-        </ul>
-  </div>
-</div>
-
-</nav>
-</div>
-</div>
-
-<div id="main" class="container">
-  <div class="row clearfix">
-    <div class="col-md-12 column">
-      <div class="jumbotron">
-        <br>
-        <div class="page-header"><h1>
-          <span class="fa-stack fa-4x welfare">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-users fa-stack-1x fa-inverse"></i>
-          </span> 
-          Welfare e diritti</h1></div><br>
-          <p class="lead">Il welfare non è una merce, i diritti non sono un lusso. Tagli indiscriminati alla sanità pubblica, misure frammentarie contro povertà e disuguaglianze, scarsa attenzione alle pari opportunità e all’inclusione delle persone in difficoltà, silenzio assordante sulla tutela dei diritti dei migranti, il razzismo e la xenofobia. Rispetto agli indirizzi del Ddl di Stabilità, Sbilanciamoci! propone un radicale cambio di rotta sul welfare, con un messaggio ben chiaro: un investimento di oltre 7,5 miliardi di euro. Tra le principali misure, lo stanziamento di risorse aggiuntive per il Fondo nazionale politiche sociali, per il Fondo nazionale infanzia e adolescenza e per la definizione dei Livelli essenziali delle prestazioni sociali (nel complesso, oltre 600 milioni di investimenti); l’abolizione dei tagli pari a 2 miliardi al Fondo Sanitario Nazionale previsti rispetto a quanto programmato in precedenza; interventi strutturali per più di 700 milioni per l’inclusione e il diritto a lavoro, alloggio e studio delle persone con disabilità. Inoltre, 1,5 miliardi sulle pari opportunità con l’introduzione di un congedo di paternità obbligatorio di 15 giorni e di un assegno di maternità universale per cinque mesi, entrambi a carico della fiscalità generale. Per le politiche abitative, oltre 2 miliardi e 200 milioni per il recupero di immobili di proprietà pubblica ai fini della residenza sociale e per l’aumento delle risorse al Fondo per la morosità incolpevole e al Fondo sociale per gli affitti: risorse che potrebbero essere in parte recuperate (700 milioni) grazie all’adozione di misure di contrasto al canone d’affitto in nero e alla tassazione degli immobili vuoti. Circa 365 milioni potrebbero arrivare dallo spostamento in regime di esecuzione penale esterna di 10mila detenuti per fatti di pochissima rilevanza. Infine, Sbilanciamoci! chiede la chiusura dei Centri di identificazione ed espulsione (Cie) e dei Centri di accoglienza per richiedenti asilo (Cara) e la destinazione delle risorse ad essi dedicate (500 milioni) per l’abolizione della tassa sul soggiorno, l’ampliamento del Sistema di protezione per richiedenti asilo e rifugiati (Sprar), gli interventi di inclusione dei cittadini stranieri, il sistema nazionale di protezione contro le discriminazioni e il razzismo, l’avvio di un piano di smantellamento dei “campi nomadi”.
-          </p>
+            <li >
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Proposte
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./fisco_finanza.html">Fisco e finanza</a></li>
+                  <li><a href="./lavoro_reddito.html">Lavoro e reddito</a></li>
+                  <li><a href="./cultura_conoscenza.html">Cultura e conoscenza</a></li>
+                  <li><a href="./ambiente.html">Ambiente e Sviluppo sostenibile</a></li>
+                  <li class="active"><a href="./welfare.html">Welfare e diritti</a></li>
+                  <li><a href="./pace_disarmo_cooperazione.html">Cooperazione, pace, disarmo</a></li>
+                  <li><a href="./altra_economia.html">Altraeconomia</a></li> 
+                </ul>
+                <li>
+                  <a href="./infografiche.html">Infografiche</a>
+                </li>
+              </li>
+            </ul>
           </div>
         </div>
 
-      </div>    
+      </nav>
+    </div>
+  </div>
+
+  <div id="main" class="container">
+    <div class="row clearfix">
+      <div class="col-md-12 column">
+       <br> 
+       <br> 
+       <br> 
+       <br> 
+      </div>
+
+    </div>    
 
 
-      <div class="row clearfix">
-        <div class="col-md-12 column">
+    <div class="row clearfix">
+      <div class="col-md-12 column">
 
-          <div ex:role="viewPanel" style="padding: 0in;">
+        <div ex:role="viewPanel" style="padding: 0in;">
 
 
-            <div ex:role="exhibit-view" 
-            ex:viewClass="Exhibit.TabularView"  
-            ex:label="Table"  
-            ex:columns=".ID,.Categoria,.Sottocategoria,.label,.Entrate,.Spese"  
-            ex:columnLabels="id,Categoria,Sottocategoria,Proposte,Entrate (mln di €),Uscite (mln di €)"
-            ex:columnFormats="number,list,list,list,list,list"
-            ex:sortColumn="0"
-            ex:sortAscending="true"
-            ex:tableStyler="tableStyler"> 
-            <div ex:role="exhibit-lens">
-              <div class="table-responsive">
-                <table class="table" ex:class-content=".territorio">
-                  <tr>
-                    <td><span ex:content=".ID"></span></td>
-                    <td><span ex:content=".Categoria"></span></td>
-                    <td><strong><span ex:content=".Sottocategoria"></span></strong></td>
-                    <!-- <td><a href="javascript:void(0);" ex:onclick-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', WIDTH, 400,BGCOLOR,'',BORDERWIDTH,0)" onmouseout="UnTip()"><span ex:content=".label"><span ex:content=".label"></span></a></td> -->
-                    <td>
-                      <!-- Shows tip if Descrizione exists -->
-                      <a ex:if-exists=".Descrizione" href="javascript:void(0);" ex:onclick-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', HEIGHT, -400,WIDTH, -800,CLICKCLOSE, true, STICKY, true, BGCOLOR,'',BORDERWIDTH,0,FONTSIZE,'12px')" onmouseout="UnTip()"><span ex:content=".label"></span></a>
-                      <!-- only if Descrizione not exists -->
-                      <span ex:content="if(exists(.Descrizione), '',  .label)"></span>
-                    </td>
-                    <td><span ex:content=".Entrate"></span></td>
-                    <td><span ex:content=".Spese"></span></td>
-                  </tr>
-                </table>
-              </div>
-
+          <div ex:role="exhibit-view" 
+          ex:viewClass="Exhibit.TabularView"  
+          ex:label="Table"  
+          ex:columns=".ID,.Categoria,.Sottocategoria,.label,.Entrate,.Spese"  
+          ex:columnLabels="id,Categoria,Sottocategoria,Proposte,Entrate (mln di €),Uscite (mln di €)"
+          ex:columnFormats="number,list,list,list,list,list"
+          ex:sortColumn="0"
+          ex:sortAscending="true"
+          ex:tableStyler="tableStyler"
+          ex:rowStyler="rowStyler"> 
+          <div ex:role="exhibit-lens">
+            <div class="table-responsive">
+              <table class="table" ex:class-content=".territorio">
+                <tr>
+                  <td><span ex:content=".ID"></span></td>
+                  <td><strong><span ex:content=".Categoria"></span></strong></td>
+                  <td><span ex:content=".Sottocategoria"></span></td>
+                  <!-- <td><a href="javascript:void(0);" ex:onclick-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', WIDTH, 400,BGCOLOR,'',BORDERWIDTH,0)" onmouseout="UnTip()"><span ex:content=".label"><span ex:content=".label"></span></a></td> -->
+                  <td>
+                    <!-- Shows tip if Descrizione exists -->
+                    <a ex:if-exists=".Descrizione" href="javascript:void(0);" ex:onclick-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', HEIGHT, -400,WIDTH, -800,CLICKCLOSE, true, STICKY, true, BGCOLOR,'',BORDERWIDTH,0,FONTSIZE,'12px')" onmouseout="UnTip()"><span ex:content=".label"></span></a>
+                    <!-- only if Descrizione not exists -->
+                    <span ex:content="if(exists(.Descrizione), '',  .label)"></span>
+                  </td>
+                  <td><span ex:content=".Entrate"></span></td>
+                  <td><span ex:content=".Spese"></span></td>
+                </tr>
+              </table>
             </div>
-          </div> 
-<!-- <img src='http://lorempixel.com/400/200/technics/'> -->
-     
 
-     </div>
+          </div>
+        </div>      
 
-   </div>
+      </div>
 
-   <hr>
-   <footer>
+    </div>
+
+    <hr>
+    <footer>
      <p class="text-center" >
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Petrusino</span> di<a xmlns:cc="http://creativecommons.org/ns#" href="http://opendatasicilia.it" property="cc:attributionName" rel="cc:attributionURL"> Open Data Sicilia</a> è distribuito con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
     </p>
