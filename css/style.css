@@ -4,14 +4,14 @@
 
 
 div.app-thumbnail {
-   float:      left;
-   width:      19.7em;
-   height:     16em;
-   border:     1px solid #BCB79E;
-   background: #F2F2F2;
-   padding:    1em;
-   margin:     0.3em;
-   overflow-y:auto;
+ float:      left;
+ width:      19.7em;
+ height:     16em;
+ border:     1px solid #BCB79E;
+ background: #F2F2F2;
+ padding:    1em;
+ margin:     0.3em;
+ overflow-y:auto;
 
 }
 
@@ -60,16 +60,16 @@ ul.nav li.active a {
 */
 
 a {
-    color: white !important;
+  color: white !important;
 }
 
 .table a {
-    color: black !important;
+  color: black !important;
 }
 
 /* rimosso momentaneamente export tool */
 .exhibit-toolboxWidget-button {
-    visibility: hidden !important;
+  visibility: hidden !important;
 }
 /* rimosso momentaneamente export tool */
 
@@ -88,14 +88,14 @@ a {
 }
 
 h1, h3 {
-    color:#C50218;
+  color:#C50218;
 }
 
 div#intro {
-    background: url(../images/altanbg.jpg) center right;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    min-height: 600px;
+  background: url(../images/altanbg.jpg) center right;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  min-height: 600px;
 }
 
 .slogan h1, .slogan h3 {
@@ -131,11 +131,11 @@ div#approfondimenti {
 }
 
 footer a {
-    color:#C50218 !important;
+  color:#C50218 !important;
 }
 
 .jumbotron {
-    background:none;
+  background:none;
 }
 
 span.fa-stack {
@@ -152,11 +152,11 @@ button {
 }
 
 div#approfondimenti h2 {
-    font-size:2em;
+  font-size:2em;
 }
 
 div#approfondimenti h1 {
-    font-size:5em;
+  font-size:5em;
 }
 
 .btn-default {
@@ -221,7 +221,7 @@ a.finanza .fa-inverse {
 }
 
 a.finanza.btn-default {
-    border-color: #55A0C7 !important;
+  border-color: #55A0C7 !important;
 }
 
 .table-striped-finanza > tbody > tr:nth-child(odd) > td,
@@ -249,7 +249,7 @@ a.welfare .fa-inverse {
 }
 
 a.welfare.btn-default {
-    border-color: #D66D71 !important;
+  border-color: #D66D71 !important;
 }
 
 .table-striped-welfare > tbody > tr:nth-child(odd) > td,
@@ -289,7 +289,7 @@ a.lavoro .fa-inverse {
 }
 
 a.lavoro.btn-default {
-    border-color: #50B6A8 !important;
+  border-color: #50B6A8 !important;
 }
 
 .table-striped-lavoro > tbody > tr:nth-child(odd) > td,
@@ -317,7 +317,7 @@ a.cooperazione .fa-inverse {
 }
 
 a.cooperazione.btn-default {
-    border-color: #C273C7 !important;
+  border-color: #C273C7 !important;
 }
 
 .table-striped-cooperazione > tbody > tr:nth-child(odd) > td,
@@ -346,7 +346,7 @@ a.cultura .fa-inverse {
 }
 
 a.cultura.btn-default {
-    border-color: #C4C960 !important;
+  border-color: #C4C960 !important;
 }
 
 .table-striped-cultura > tbody > tr:nth-child(odd) > td,
@@ -376,7 +376,7 @@ a.altra .fa-inverse {
 }
 
 a.altra.btn-default {
-    border-color: #C50218 !important;
+  border-color: #C50218 !important;
 }
 
 .table-striped-altra > tbody > tr:nth-child(odd) > td,
@@ -404,7 +404,7 @@ a.ambiente .fa-inverse {
 }
 
 a.ambiente.btn-default {
-    border-color: #F3BC52 !important;
+  border-color: #F3BC52 !important;
 }
 
 .table-striped-ambiente > tbody > tr:nth-child(odd) > td,
@@ -432,7 +432,7 @@ a.tutto .fa-inverse {
 }
 
 a.tutto.btn-default {
-    border-color: gray !important;
+  border-color: gray !important;
 }
 
 .table-striped-tutto > tbody > tr:nth-child(odd) > td,
@@ -446,7 +446,7 @@ span.tutto .text-primary{
 /*tutto*/
 
 /* tooltip */
-.tip {
+/*.tip {
   border-radius: 5px !important;
   white-space: normal;
   background-color: #C50218;
@@ -456,7 +456,47 @@ span.tutto .text-primary{
   border-color: #ffffff;
   border-width: 2px;
   border-style: solid;
-  font-size:1.5em;
-  line-height:1.5em
+  font-size:1.2em;
+  line-height:1.0em
+  }*/
+  /* tooltip */
+
+/*.tip{
+  border-radius: 5px !important;
+  white-space: normal;
+  background-color: #ffffff;
+  margin: 0px;
+  padding: 10px;
+  border-color: #C50218;
+  border-width: 2px;
+  border-style: solid;
+
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
 }
-/* tooltip */
+*/
+.tip{
+  border-radius: 5px !important;
+  white-space: normal;
+  background-color: #ffffff;
+  margin: 0px;
+  padding: 10px;
+  border-color: #C50218;
+  border-width: 2px;
+  border-style: solid;
+  line-height: 1.5;
+  margin: 0 0 1.5em;
+  text-align: left;
+  font-family: font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.25em;
+  text-rendering: optimizeLegibility;
+}
