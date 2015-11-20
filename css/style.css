@@ -456,5 +456,7 @@ span.tutto .text-primary{
   border-color: #ffffff;
   border-width: 2px;
   border-style: solid;
+  font-size:1.5em;
+  line-height:1.5em
 }
 /* tooltip */
