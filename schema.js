@@ -10,9 +10,6 @@
     "properties": {
         "ID": {
             "valueType": "number"
-        },
-        "label": {
-            "valueType":              "item"
         }
     }
 }
