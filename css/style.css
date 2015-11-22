@@ -93,16 +93,23 @@ h1, h3 {
 
 div#intro {
   /*background: url(../images/altanbg.jpg) center right;*/
-  background-size: 40%;
+  /*background-size: 40%;
   background-repeat: no-repeat;
-  min-height: 600px;
+  min-height: 600px;*/
 }
 
 .slogan h1, .slogan h3 {
-  position:relative;
-  top:200px;
+/*  position:relative;
+  top:200px;*/
 }
 
+.centro-verticale {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
 .slogan h3 {
   font-size:30px;
   color:#C50218;
