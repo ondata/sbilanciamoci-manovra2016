@@ -92,7 +92,7 @@ h1, h3 {
 }
 
 div#intro {
-  background: url(../images/altanbg.jpg) center right;
+  /*background: url(../images/altanbg.jpg) center right;*/
   background-size: 40%;
   background-repeat: no-repeat;
   min-height: 600px;
@@ -446,41 +446,7 @@ span.tutto .text-primary{
 /*tutto*/
 
 /* tooltip */
-/*.tip {
-  border-radius: 5px !important;
-  white-space: normal;
-  background-color: #C50218;
-  color: white;
-  margin: 0px;
-  padding: 10px;
-  border-color: #ffffff;
-  border-width: 2px;
-  border-style: solid;
-  font-size:1.2em;
-  line-height:1.0em
-  }*/
-  /* tooltip */
 
-/*.tip{
-  border-radius: 5px !important;
-  white-space: normal;
-  background-color: #ffffff;
-  margin: 0px;
-  padding: 10px;
-  border-color: #C50218;
-  border-width: 2px;
-  border-style: solid;
-
-  font-family: Helvetica, arial, freesans, clean, sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
-    padding: 20px;
-    max-width: 960px;
-    margin: 0 auto;
-}
-*/
 .tip{
   border-radius: 5px !important;
   white-space: normal;
@@ -493,10 +459,18 @@ span.tutto .text-primary{
   line-height: 1.5;
   margin: 0 0 1.5em;
   text-align: left;
-  font-family: font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 1.25em;
   text-rendering: optimizeLegibility;
+}
+/* tooltip */
+
+.scarica{
+  font-family: 'Montserrat', sans-serif;
+  color: #C50218 !important;
+  font-weight: bold;
+  font-size: 26px;
 }
