@@ -63,6 +63,7 @@ a {
   color: white !important;
 }
 
+h2 a {color:#c50218!important;}
 .table a {
   color: black !important;
 }
@@ -73,9 +74,16 @@ a {
 }
 /* rimosso momentaneamente export tool */
 
-
+/* Modifiche Icone font awesome*/
+.fa-euro.fa-stack-1x {
+    top:6px;
+left:-2px;
+}
 
 /* smanettamenti NELSON */
+
+
+
 
 .navbar-default {
   background-color: #C50218;
@@ -104,8 +112,6 @@ div#intro {
 }
 
 .centro-verticale {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;
@@ -142,7 +148,20 @@ footer a {
 }
 
 .jumbotron {
+  padding-bottom: 0px;
+    padding-top: 5px;
+padding-left:0px!important;
+padding-right:0px!important;
   background:none;
+}
+.jumbotron p {
+    font-size: 19px;
+    line-height: 1.3;
+}
+.page-header {
+    border-bottom: 1px solid #eee;
+    margin: 10px 0 0;
+    padding-bottom: 0;
 }
 
 span.fa-stack {
@@ -172,11 +191,15 @@ div#approfondimenti h1 {
 
 #macrocategorie a {
   width:100%;
-  margin-bottom:40px;
+  margin-bottom:20px;
   color:#c50218;
   text-align: left;    
 }
-
+#macrocategorie a:hover {
+opacity:0.7;
+background:#000;
+  
+}
 .dropdown-menu {
   background-color:#C50218;
 }
@@ -197,6 +220,7 @@ ul.nav.navbar-nav.dropdown>li>a:hover, .dropdown-menu>li>a:hover, .dropdown-menu
 div#scarica, div#scaricatab {
   text-align:center;
 }
+p.valdesi {margin-top:30px;}
 
 #macrocategorie .btn.btn-default.btn-lg {
   border-radius: 15px !important;
@@ -212,29 +236,38 @@ tr td {
   line-height:2em !important;
   font-size:1.2em
 }
+.exhibit-tabularView-body tr,.exhibit-tabularView-body td,.exhibit-tabularView-body th{border:6px solid #fff;}
+
 
 /*finanza*/
 a.finanza {
-  color: #55A0C7 !important;
+  color: #fff !important;
   text-align: left;
 }
 
 a.finanza .fa {
-  color:#55A0C7;
+  color:#fff;
 }
 
 a.finanza .fa-inverse {
-  color:white;
+  color:#55A0C7
 }
 
 a.finanza.btn-default {
   border-color: #55A0C7 !important;
 }
+#macrocategorie .btn.btn-default.btn-lg.finanza {
+    border-radius: 15px !important;
+    white-space: normal;
+background: #55A0C7 !important;
+}
+
+.table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {background:#EDEDED;border-radius:13px;}
 
 .table-striped-finanza > tbody > tr:nth-child(odd) > td,
 .table-striped-finanza > tbody > tr:nth-child(odd) > th {
-  background-color: #55A0C7;
-}
+  background-color: #9ccae1;border-radius:13px;}
+.finanzatable  {background:#fff;}
 
 span.finanza .text-primary{
   color: #55A0C7 !important;
@@ -243,29 +276,34 @@ span.finanza .text-primary{
 
 /*welfare*/
 a.welfare {
-  color: #D66D71 !important;
+  color: #fff !important;
   text-align: left;
 }
 
 a.welfare .fa {
-  color:#D66D71;
+  color:#fff;
 }
 
 a.welfare .fa-inverse {
-  color:white;
+  color:#D44849;
 }
 
 a.welfare.btn-default {
-  border-color: #D66D71 !important;
+  border-color: #D44849 !important;
+}
+#macrocategorie .btn.btn-default.btn-lg.welfare {
+    border-radius: 15px !important;
+    white-space: normal;
+background: #D44849 !important;
 }
 
 .table-striped-welfare > tbody > tr:nth-child(odd) > td,
 .table-striped-welfare > tbody > tr:nth-child(odd) > th {
-  background-color: #D66D71;
+  background-color: #D44849; border-radius:13px;
 }
 
 span.welfare .text-primary{
-  color: #D66D71 !important;
+  color: #D44849 !important;
 }
 
 .tip-welfare {
@@ -283,25 +321,30 @@ span.welfare .text-primary{
 
 /*lavoro*/
 a.lavoro {
-  color: #50B6A8 !important;
+  color: white; !important;
   text-align: left;
 }
 
 a.lavoro .fa {
-  color:#50B6A8;
+  color:white;
 }
 
 a.lavoro .fa-inverse {
-  color:white;
+  color:#50B6A8 
 }
 
 a.lavoro.btn-default {
   border-color: #50B6A8 !important;
 }
+#macrocategorie .btn.btn-default.btn-lg.lavoro {
+    border-radius: 15px !important;
+    white-space: normal;
+background: #50B6A8  !important;
+}
 
 .table-striped-lavoro > tbody > tr:nth-child(odd) > td,
 .table-striped-lavoro > tbody > tr:nth-child(odd) > th {
-  background-color: #50B6A8;
+  background-color: #50B6A8;border-radius:13px;
 }
 
 span.lavoro .text-primary{
@@ -311,25 +354,33 @@ span.lavoro .text-primary{
 
 /*cooperazione*/
 a.cooperazione {
-  color: #C273C7 !important;
+  color: #fff !important;
   text-align: left;
 }
 
 a.cooperazione .fa {
-  color:#C273C7;
+  color:#fff;
 }
 
 a.cooperazione .fa-inverse {
-  color:white;
+  color:#8688C8;
 }
 
 a.cooperazione.btn-default {
-  border-color: #C273C7 !important;
+  border-color: #8688C8!important;
 }
+
+
+#macrocategorie .btn.btn-default.btn-lg.cooperazione{
+    border-radius: 15px !important;
+    white-space: normal;
+background: #8688C8  !important;
+}
+
 
 .table-striped-cooperazione > tbody > tr:nth-child(odd) > td,
 .table-striped-cooperazione > tbody > tr:nth-child(odd) > th {
-  background-color: #C273C7;
+  background-color: #C273C7;border-radius:13px;
 }
 
 span.cooperazione .text-primary{
@@ -340,16 +391,16 @@ span.cooperazione .text-primary{
 
 /*cultura*/
 a.cultura {
-  color: #C4C960 !important;
+  color: #fff !important;
   text-align: left;
 }
 
 a.cultura .fa {
-  color:#C4C960;
+  color:white;
 }
 
 a.cultura .fa-inverse {
-  color:white;
+  color:#C4C960;
 }
 
 a.cultura.btn-default {
@@ -358,65 +409,85 @@ a.cultura.btn-default {
 
 .table-striped-cultura > tbody > tr:nth-child(odd) > td,
 .table-striped-cultura > tbody > tr:nth-child(odd) > th {
-  background-color: #C4C960;
+  background-color: #C4C960;border-radius:13px;
 }
 
 span.cultura .text-primary{
   color: #C4C960 !important;
 }
+
+#macrocategorie .btn.btn-default.btn-lg.cultura{
+    border-radius: 15px !important;
+    white-space: normal;
+background: #C4C960 !important;
+}
+
 /*cultura*/
 
 
 
 /*altra*/
 a.altra {
-  color: #C50218 !important;
+  color: #fff !important;
   text-align: left;
 }
 
 a.altra .fa {
-  color:#C50218;
+  color:#fff;
 }
 
 a.altra .fa-inverse {
-  color:white;
+  color:#BB71C3;
 }
 
 a.altra.btn-default {
-  border-color: #C50218 !important;
+  border-color: #BB71C3 !important;
 }
 
 .table-striped-altra > tbody > tr:nth-child(odd) > td,
 .table-striped-altra > tbody > tr:nth-child(odd) > th {
-  background-color: #C50218;
+  background-color: #f36c7c;border-radius:13px;
 }
 
 span.altra .text-primary{
-  color: #C50218 !important;
+  color: #BB71C3!important;
 }
+
+#macrocategorie .btn.btn-default.btn-lg.altra{
+    border-radius: 15px !important;
+    white-space: normal;
+background:#BB71C3!important;
+}
+
 /*altra*/
 
 /*ambiente*/
 a.ambiente {
-  color: #F3BC52 !important;
+  color: #FFF !important;
   text-align: left;
 }
 
 a.ambiente .fa {
-  color:#F3BC52;
+  color:#FFF;
 }
 
 a.ambiente .fa-inverse {
-  color:white;
+  color:#F3BC52 ;
 }
 
 a.ambiente.btn-default {
   border-color: #F3BC52 !important;
 }
 
+
+#macrocategorie .btn.btn-default.btn-lg.ambiente{
+    border-radius: 15px !important;
+    white-space: normal;
+background:#F3BC52!important;
+}
 .table-striped-ambiente > tbody > tr:nth-child(odd) > td,
 .table-striped-ambiente > tbody > tr:nth-child(odd) > th {
-  background-color: #F3BC52;
+  background-color: #F3BC52;border-radius:13px;
 }
 
 span.ambiente .text-primary{
@@ -426,25 +497,30 @@ span.ambiente .text-primary{
 
 /*tutto*/
 a.tutto {
-  color: gray !important;
+  color: #fff!important;
   text-align: left;
 }
 
 a.tutto .fa {
-  color:gray;
+  color:#fff;
 }
 
 a.tutto .fa-inverse {
-  color:white;
+  color:#666;
 }
 
 a.tutto.btn-default {
   border-color: gray !important;
 }
+#macrocategorie .btn.btn-default.btn-lg.tutto{
+    border-radius: 15px !important;
+    white-space: normal;
+background:#666!important;
+}
 
 .table-striped-tutto > tbody > tr:nth-child(odd) > td,
 .table-striped-tutto > tbody > tr:nth-child(odd) > th {
-  background-color: #gray;
+  background-color: #gray;border-radius:13px;
 }
 
 span.tutto .text-primary{
@@ -479,5 +555,5 @@ span.tutto .text-primary{
   font-family: 'Montserrat', sans-serif;
   color: #C50218 !important;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 32px;
 }
