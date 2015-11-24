@@ -99,6 +99,8 @@ left:2px;
     top:5px;
 left:-2px;
 }
+
+
 /* smanettamenti NELSON */
 
 
@@ -265,7 +267,7 @@ tr td {
 }
 .exhibit-tabularView-body tr,.exhibit-tabularView-body td,.exhibit-tabularView-body th{border:6px solid #fff;}
 
-
+.exhibit-collectionSummaryWidget-results {display:none!important}
 /*finanza*/
 a.finanza {
   color: #fff !important;
