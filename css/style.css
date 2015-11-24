@@ -178,8 +178,8 @@ padding-right:0px!important;
     line-height: 1.3;
 }
 .page-header.home {
-    border-bottom: 1px solid #eee;
-    margin: 20px 0 10px;
+    border-bottom: 0px solid #eee;
+    margin: 20px 0 0px;
     padding-bottom: 0;
 }
 .page-header {
@@ -247,6 +247,8 @@ ul.nav.navbar-nav.dropdown>li>a:hover, .dropdown-menu>li>a:hover, .dropdown-menu
 
 div#scarica, div#scaricatab {
   text-align:center;
+  border-bottom: 1px solid #eee;
+margin-bottom:20px;
 }
 p.valdesi {margin-top:30px;}
 
@@ -267,7 +269,7 @@ tr td {
 }
 .exhibit-tabularView-body tr,.exhibit-tabularView-body td,.exhibit-tabularView-body th{border:6px solid #fff;}
 
-.exhibit-collectionSummaryWidget-results {display:none!important}
+.tutte .exhibit-collectionSummaryWidget-results {display:none!important}
 /*finanza*/
 a.finanza {
   color: #fff !important;
@@ -409,11 +411,11 @@ background: #8688C8  !important;
 
 .table-striped-cooperazione > tbody > tr:nth-child(odd) > td,
 .table-striped-cooperazione > tbody > tr:nth-child(odd) > th {
-  background-color: #C273C7;border-radius:13px;
+  background-color:#8688C8; border-radius:13px;
 }
 
 span.cooperazione .text-primary{
-  color: #C273C7 !important;
+  color: #8688C8 !important;
 }
 /*cooperazione*/
 
@@ -475,7 +477,7 @@ a.altra.btn-default {
 
 .table-striped-altra > tbody > tr:nth-child(odd) > td,
 .table-striped-altra > tbody > tr:nth-child(odd) > th {
-  background-color: #f36c7c;border-radius:13px;
+  background-color: #BB71C3;border-radius:13px;
 }
 
 span.altra .text-primary{
@@ -525,6 +527,9 @@ span.ambiente .text-primary{
 /*ambiente*/
 
 /*tutto*/
+span.tutto .text-primary{
+  color: #666 !important;
+}
 a.tutto {
   color: #fff!important;
   text-align: left;
