@@ -605,6 +605,10 @@ footer i {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;font-style:italic;}
 
+/*grafici e dati*/
+p.grafico {font-size:16px}
+h4.grafico {font-size:18px; font-weight:bold;}
+
 @media (max-width: 767px) {
   .slogan h3 {
   color: #c50218;
