@@ -137,13 +137,14 @@
 <p>Inoltre, 1,5 miliardi sulle pari opportunità con l’introduzione di un congedo di paternità obbligatorio di 15 giorni e di un assegno di maternità universale per cinque mesi, entrambi a carico della fiscalità generale. Per le politiche abitative, oltre 2 miliardi e 200 milioni per il recupero di immobili di proprietà pubblica ai fini della residenza sociale e per l’aumento delle risorse al Fondo per la morosità incolpevole e al Fondo sociale per gli affitti: risorse che potrebbero essere in parte recuperate (700 milioni) grazie all’adozione di misure di contrasto al canone d’affitto in nero e alla tassazione degli immobili vuoti. Circa 365 milioni potrebbero arrivare inoltre dallo spostamento in regime di esecuzione penale esterna di 10mila detenuti per fatti di pochissima rilevanza. </p>
 <p>Infine, Sbilanciamoci! chiede la chiusura dei Centri di identificazione ed espulsione (Cie) e dei Centri di accoglienza per richiedenti asilo (Cara) e la destinazione delle risorse ad essi dedicate (500 milioni) per l’abolizione della tassa sul soggiorno, l’ampliamento del Sistema di protezione per richiedenti asilo e rifugiati (Sprar), gli interventi di inclusione dei cittadini stranieri, il sistema nazionale di protezione contro le discriminazioni e il razzismo, l’avvio di un piano di smantellamento dei “campi nomadi”.</p>
           </div>
-  <div id="scaricatab">
-                <!-- <span class="fa-stack">
-                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                <i class="fa fa-balance-scale fa-stack-1x fa-inverse"></i></span></h1> -->
-                <!-- <a href="#"><img src="./img/scarica_sbilanciamoci.png"></a> -->
-                <a href="/rapporto2016/welfare.pdf" style="text-decoration: none" class="scarica">Scarica la sezione del Rapporto su Welfare e diritti</a>
-            </div>
+<div id="scaricatab">
+                <span class="fa-stack">
+                  <a href="/rapporto2016/welfareediritti.pdf"> <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-download  fa-stack-1x fa-inverse"></i></span></a> 
+             
+                <a href="/rapporto2016/welfareediritti.pdf" style="text-decoration: none" class="scarica">Scarica la sezione del Rapporto su Welfare e Diritti</a>
+            </div>   
+
 
         </div>
 
@@ -172,9 +173,10 @@
                     <td><strong><span ex:content=".Sottocategoria"></span></strong></td>
                     <!-- <td><a href="javascript:void(0);" ex:onclick-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', WIDTH, 400,BGCOLOR,'',BORDERWIDTH,0)" onmouseout="UnTip()"><span ex:content=".label"><span ex:content=".label"></span></a></td> -->
                     <td>
-                      <!-- Shows tip if Descrizione exists -->
-                      <a ex:if-exists=".Descrizione" href="javascript:void(0);" ex:onclick-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', HEIGHT, -400,WIDTH, -800,CLICKCLOSE, true, STICKY, true, BGCOLOR,'',BORDERWIDTH,0,FONTSIZE,'12px')" onmouseout="UnTip()"><span ex:content=".label"></span></a>
+                     <!-- Shows tip if Descrizione exists -->
+                      <a ex:if-exists=".Descrizione" href="javascript:void(0);" ex:onmouseover-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', HEIGHT, -400,WIDTH, -800,OFFSETX, -200,OFFSETY, -50, CLICKSTICKY, true, STICKY, true, BGCOLOR,'',BORDERWIDTH,0,FONTSIZE,'12px')" onmouseout="UnTip()"><span ex:content=".label"></span></a>
                       <!-- only if Descrizione not exists -->
+                     
                       <span ex:content="if(exists(.Descrizione), '',  .label)"></span>
                     </td>
                     <td><span ex:content=".Entrate"></span></td>

@@ -81,12 +81,12 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <div class="container">
-                   <ul class="nav navbar-nav dropdown">
-                    <li>
+           <ul class="nav navbar-nav dropdown">
+                    <li class="active">
                         <a href="./index.html">Home</a>
                     </li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle"  data-toggle="dropdown" href="#">Proposte
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Proposte
                         <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="./fisco_finanza.html">Fisco e finanza</a></li>
@@ -98,22 +98,27 @@
                                 <li><a href="./altra_economia.html">Altraeconomia</a></li> 
                             </ul>
                     <li>
-                        <a href="./infografica.html">Infografica</a>
+                        <a href="./infografica.html">Infografica</a>  </li>                    
+
 <li>
                         <a href="./analisi_e_dati.html">Analisi e dati</a>
-                    </li>                    </li>
+                    </li>                    
 
-                    </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-         <li>
+ <li>
+          <a href="http://Sbilanciamoci.org/contatti" target="_blank">Contatti </a>
+        </li>        
+ <li>
           <a href="http://Sbilanciamoci.org" target="_blank">Sbilanciamoci.org </a>
         </li>
         </ul>
-  </div>
+        </div>
+    </div>
 </div>
 
-</nav>
+  </nav>
+
 </div>
 </div>
 
@@ -169,10 +174,11 @@
                     <!-- <td><strong><span ex:content=".Sottocategoria"></span></strong></td> -->
                     <!-- <td><a href="javascript:void(0);" ex:onclick-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', WIDTH, 400,BGCOLOR,'',BORDERWIDTH,0)" onmouseout="UnTip()"><span ex:content=".label"><span ex:content=".label"></span></a></td> -->
                     <td>
-                      <!-- Shows tip if Descrizione exists -->
-                      <a ex:if-exists=".Descrizione" href="javascript:void(0);" ex:onclick-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', HEIGHT, -400,WIDTH, -800,CLICKCLOSE, true, STICKY, true, BGCOLOR,'',BORDERWIDTH,0,FONTSIZE,'12px')" onmouseout="UnTip()"><span ex:content=".label"></span></a>
+                     <!-- Shows tip if Descrizione exists -->
+                      <a ex:if-exists=".Descrizione" href="javascript:void(0);" ex:onmouseover-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', HEIGHT, -400,WIDTH, -800,OFFSETX, -200,OFFSETY, -50, CLICKSTICKY, true, STICKY, true, BGCOLOR,'',BORDERWIDTH,0,FONTSIZE,'12px')" onmouseout="UnTip()"><span ex:content=".label"></span></a>
                       <!-- only if Descrizione not exists -->
-                      <span ex:content="if(exists(.Descrizione), '',  .label)"></span>
+                     
+                     <span ex:content="if(exists(.Descrizione), '',  .label)"></span>
                     </td>
                     <td><span ex:content=".Entrate"></span></td>
                     <td><span ex:content=".Spese"></span></td>
