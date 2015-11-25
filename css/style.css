@@ -118,6 +118,10 @@ div.app-thumbnail {
   padding: 0px 15px !important;
 }
 
+.bottomstrip span.fa-stack {
+    color: #c50218;
+    font-size: 4em !important;
+}{}
 
 /* tipografy */ 
 a {
@@ -247,6 +251,11 @@ left:2px;
     top:5px;
 left:-2px;
 }
+.fa-pie-chart.fa-stack-1x {
+    top:1px;
+left:2px;
+}
+
 
 .fa {
   color:#C50218;
