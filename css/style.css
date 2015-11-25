@@ -1,11 +1,12 @@
 /* Menu */
-
+.navbar-nav > li > a {margin-right:10px; font-weight:600}
 .navbar-default {
   background-color: #C50218;
   border-color: #C50218;
 }
+.dropdown-menu > li > a {font-weight:600}
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #555;
   background-color: rgba(231, 231, 231, 0.23);
 }
