@@ -1,7 +1,100 @@
+/* Menu */
 
-.exhibit-tileView-body { list-style: none; }
-.exhibit-collectionView-group-count { display: none; }
+.navbar-default {
+  background-color: #C50218;
+  border-color: #C50218;
+}
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: #555;
+  background-color: rgba(231, 231, 231, 0.23);
+}
+
+.dropdown-menu {
+  background-color:#C50218;
+}
+
+.dropdown-toggle {
+  background-color:#c50218 !important;
+}
+
+ul.nav.navbar-nav.dropdown>li>a:hover, .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+  background-color: rgba(231, 231, 231, 0.23) !important;
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li {
+  display: inline;
+}
+
+/* Layout */
+hr { display: block; height: 1px;
+ border: 0; border-top: 1px solid #C50218;
+ margin: 1em 0; padding: 0; } 
+
+
+div#intro {
+margin-top:50px
+}
+
+.centro-verticale {
+  display: flex;
+  align-items: center;
+}
+
+div#macrocategorie {  padding: 10px;}
+
+div#approfondimenti {
+  text-align:center;
+  background-color:white;
+  color:#C50218;
+  margin-bottom:50px;
+}
+
+.jumbotron {
+  padding-bottom: 0px;
+    padding-top: 5px;
+padding-left:0px!important;
+padding-right:0px!important;
+  background:none;
+}
+.jumbotron p {
+    font-size: 19px;
+    line-height: 1.3;
+}
+.page-header.home {
+    border-bottom: 0px solid #eee;
+    margin: 20px 0 0px;
+    padding-bottom: 0;
+}
+.page-header {
+    border-bottom: 1px solid #eee;
+    margin: 50px 0 20px;
+    padding-bottom: 0;
+}
+.btn-default {
+  border-color: #c50218;
+}
+.caret {
+  border-top-color: white !important;
+  border-bottom-color: white !important;
+}
+
+div#scarica, div#scaricatab {
+  text-align:center;
+  border-bottom: 1px solid #eee;
+margin-bottom:20px;
+}
+p.valdesi {margin-top:30px;}
+
+#macrocategorie .btn.btn-default.btn-lg {
+  border-radius: 15px !important;
+  white-space: normal;
+}
 
 div.app-thumbnail {
  float:      left;
@@ -15,50 +108,12 @@ div.app-thumbnail {
 
 }
 
-hr { display: block; height: 1px;
- border: 0; border-top: 1px solid #C50218;
- margin: 1em 0; padding: 0; } 
-
- .petrosino {
-  color: #C50218 !important;
-}
-
-.highlight {
-  padding: 9px 14px;
-  margin-bottom: 14px;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
-  border-radius: 4px;
-}
-
-ul.share-buttons{
-  list-style: none;
-  padding: 0;
-}
-
-ul.share-buttons li {
-  display: inline;
-}
-
 .logo {
   padding: 0px 15px !important;
 }
 
-/*
- * ul.nav li a, ul.nav li a:visited {
-    color: white !important;
-}
 
-
-ul.nav li a:hover, ul.nav li a:active {
-    color: white !important;
-}
-
-ul.nav li.active a {
-    color: white !important;
-}
-*/
-
+/* tipografy */ 
 a {
   color: white !important;
 }
@@ -68,11 +123,97 @@ h2 a {color:#c50218!important;}
   color: black !important;
 }
 
-/* rimosso momentaneamente export tool */
-.exhibit-toolboxWidget-button {
-  visibility: hidden !important;
+
+h1, h3 { color:#C50218;}
+
+.page-header h1 {
+    margin-bottom:0px;
 }
+
+.slogan h3 {
+  font-size:30px;
+  color:#333;
+}
+.slogan h1 {
+  color: #C50218;
+  font-size: 60px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.slogan { text-align:center;}
+
+.highlight {
+  padding: 9px 14px;
+  margin-bottom: 14px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+}
+
+
+button {
+  text-align:left !important;
+}
+ .petrosino {
+  color: #C50218 !important;
+}
+
+
+div#approfondimenti h2 {
+  font-size:2em;
+}
+
+div#approfondimenti h1 {
+  font-size:5em;
+}
+
+
+#macrocategorie a {
+  width:100%;
+  margin-bottom:20px;
+  color:#c50218;
+  text-align: left;    
+}
+#macrocategorie a:hover {
+opacity:0.8;
+background:#000;
+  
+}
+
+a.btn.btn-default.btn-lg {
+  font-size:2.2rem;
+font-weight:bold;
+}
+
+a.scarica {
+  font-family: 'Montserrat', sans-serif;
+  color: #C50218 !important;
+  font-weight: bold;
+  font-size: 26px;
+margin-top:5px;
+}
+a.readmore
+{  font-family: 'Montserrat', sans-serif;
+  color: #C50218 !important;font-size:21px;font-weight:normal!important	;}
+
+
+footer a {color:#C50218 !important;}
+footer p {margin:2px 0px; padding:2px 0px}
+footer i {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;font-style:italic;}
+
+
+
+/* Modifiche exhibit*/
+
+.exhibit-tabularView-body tr,.exhibit-tabularView-body td,.exhibit-tabularView-body th{border:6px solid #fff;}
+.exhibit-tileView-body { list-style: none; }
+.exhibit-collectionView-group-count { display: none; }
+.tutte .exhibit-collectionSummaryWidget-results {display:none!important}
 /* rimosso momentaneamente export tool */
+.exhibit-toolboxWidget-button { visibility: hidden !important;}
 
 /* Modifiche Icone font awesome*/
 .fa-euro.fa-stack-1x {
@@ -100,96 +241,8 @@ left:2px;
 left:-2px;
 }
 
-
-/* smanettamenti NELSON */
-
-
-
-
-.navbar-default {
-  background-color: #C50218;
-  border-color: #C50218;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-  color: #555;
-  background-color: rgba(231, 231, 231, 0.23);
-}
-
-h1, h3 {
+.fa {
   color:#C50218;
-}
-
-div#intro {
-margin-top:50px
-}
-
-.slogan h1, .slogan h3 {
-/*  position:relative;
-  top:200px;*/
-}
-
-.centro-verticale {
-
-  display: flex;
-  align-items: center;
-}
-.slogan h3 {
-  font-size:30px;
-  color:#C50218;
-}
-.slogan h1 {
-  color: #C50218;
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 700;
-  /*text-transform: uppercase;*/
-}
-
-.slogan {
- text-align:center;
-}
-
-div#macrocategorie {
-  padding: 10px;
-}
-
-div#approfondimenti {
-  text-align:center;
-  background-color:white;
-  color:#C50218;
-  margin-bottom:50px;
-}
-
-footer a {
-  color:#C50218 !important;
-}
-footer p {margin:2px 0px; padding:2px 0px}
-
-.jumbotron {
-  padding-bottom: 0px;
-    padding-top: 5px;
-padding-left:0px!important;
-padding-right:0px!important;
-  background:none;
-}
-.jumbotron p {
-    font-size: 19px;
-    line-height: 1.3;
-}
-.page-header.home {
-    border-bottom: 0px solid #eee;
-    margin: 20px 0 0px;
-    padding-bottom: 0;
-}
-.page-header {
-    border-bottom: 1px solid #eee;
-    margin: 50px 0 20px;
-    padding-bottom: 0;
-}
-
-.page-header h1 {
-    margin-bottom:0px;
 }
 
 span.fa-stack {
@@ -197,79 +250,24 @@ span.fa-stack {
   font-size:2em;
 }
 
-.fa {
-  color:#C50218;
+#scaricatab .fa-stack-1x, #scaricatab  .fa-stack-2x {
+    left: -10px;
+    top: -7px;
 }
 
-button {
-  text-align:left !important;
-}
 
-div#approfondimenti h2 {
-  font-size:2em;
-}
 
-div#approfondimenti h1 {
-  font-size:5em;
-}
+/* table */ 
 
-.btn-default {
-  border-color: #c50218;
-}
 
-#macrocategorie a {
-  width:100%;
-  margin-bottom:20px;
-  color:#c50218;
-  text-align: left;    
-}
-#macrocategorie a:hover {
-opacity:0.8;
-background:#000;
-  
-}
-.dropdown-menu {
-  background-color:#C50218;
-}
-
-.dropdown-toggle {
-  background-color:#c50218 !important;
-}
-
-ul.nav.navbar-nav.dropdown>li>a:hover, .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
-  background-color: rgba(231, 231, 231, 0.23) !important;
-}
-
-.caret {
-  border-top-color: white !important;
-  border-bottom-color: white !important;
-}
-
-div#scarica, div#scaricatab {
-  text-align:center;
-  border-bottom: 1px solid #eee;
-margin-bottom:20px;
-}
-p.valdesi {margin-top:30px;}
-
-#macrocategorie .btn.btn-default.btn-lg {
-  border-radius: 15px !important;
-  white-space: normal;
-}
-
-a.btn.btn-default.btn-lg {
-  font-size:2.2rem;
-font-weight:bold;
-}
-
-/** Pagina di dettaglio - Welfare **/
 tr td {
   line-height:2em !important;
   font-size:1.2em
 }
-.exhibit-tabularView-body tr,.exhibit-tabularView-body td,.exhibit-tabularView-body th{border:6px solid #fff;}
+.table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {background:#EDEDED;border-radius:13px;}
 
-.tutte .exhibit-collectionSummaryWidget-results {display:none!important}
+
+
 /*finanza*/
 a.finanza {
   color: #fff !important;
@@ -292,14 +290,10 @@ a.finanza.btn-default {
     white-space: normal;
 background: #55A0C7 !important;
 }
-
-.table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {background:#EDEDED;border-radius:13px;}
-
 .table-striped-finanza > tbody > tr:nth-child(odd) > td,
 .table-striped-finanza > tbody > tr:nth-child(odd) > th {
   background-color: #9ccae1;border-radius:13px;}
 .finanzatable  {background:#fff;}
-
 span.finanza .text-primary{
   color: #55A0C7 !important;
 }
@@ -524,6 +518,9 @@ background:#F3BC52!important;
 span.ambiente .text-primary{
   color: #F3BC52 !important;
 }
+h1.ambiente,h1.cooperazione{font-size:50px}
+
+
 /*ambiente*/
 
 /*tutto*/
@@ -585,40 +582,43 @@ span.tutto .text-primary{
 }
 /* tooltip */
 
-a.scarica {
-  font-family: 'Montserrat', sans-serif;
-  color: #C50218 !important;
-  font-weight: bold;
-  font-size: 28px;
-margin-top:5px;
-}
-a.readmore
-{  font-family: 'Montserrat', sans-serif;
-  color: #C50218 !important;font-size:21px;font-weight:normal!important	;}
-
-#scaricatab .fa-stack-1x, #scaricatab  .fa-stack-2x {
-    left: -10px;
-    top: -7px;
-}
-h1.ambiente{font-size:50px}
-footer i {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;font-style:italic;}
 
 /*grafici e dati*/
 p.grafico {font-size:16px}
 h4.grafico {font-size:18px; font-weight:bold;}
+/*grafici e dati*/
+
+/*responsive*/
 
 @media (max-width: 767px) {
   .slogan h3 {
-  color: #c50218;
-  font-size: 22px!important;
+  color: #333;
+  font-size: 20px!important;
 }.slogan h1 {  
-  font-size: 36px;
+  font-size: 32px;
   line-height: 40px;
 }
-.btn.btn-default.btn-lg {
-    font-size: 1.8rem!important;
+h1 {font-size:28px; line-height:40px;}
+h1.ambiente, h1.cooperazione {font-size:18px; line-height:40px;font-weight:bold;}
+
+a.scarica {
+    color: #c50218 !important;
+    font-family: "Montserrat",sans-serif;
+    font-size: 20px;
+line-height:20px;	
     font-weight: bold;
+    margin-top: 10px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+a.btn.btn-default.btn-lg {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
 }
 
